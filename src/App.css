@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  background-color: #141414;
+  
+
+}
+
+
+.tabs:hover {
+  color: white !important;
+  transition: 0.2s ease;
+}

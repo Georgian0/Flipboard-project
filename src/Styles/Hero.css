@@ -1,0 +1,147 @@
+body {
+    padding-top: 80px;
+}
+
+.hero--content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+    padding-top: 10rem
+
+}
+
+.hero--logo {
+    display: none;
+}
+
+.hero--main {
+    font-size: 60px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 55px;
+    font-weight: 800;
+}
+
+.red--line {
+    text-decoration: #F52828 underline 10px;
+}
+
+.hero--second {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: lighter;
+}
+
+.hero--button {
+    padding: 20px 30px;
+    margin-top: 2rem;
+    background-color: #F52828;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.hero--button:hover {
+    background-color: #E00A0A;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#tabs--navbar{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #333333;
+    margin: 2rem 1rem;
+    padding-top: 4.5rem;
+    padding-bottom: 1rem;
+    height: 2rem;
+    align-items: center;
+}
+
+#tabs--navbar li a {
+    text-decoration: none;
+    color: #BCBCBC;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 16px 6px;
+    text-wrap: nowrap;
+}
+
+#tabs--navbar li {
+    list-style: none;
+}
+
+#tabs--navbar a:hover {
+    cursor: pointer;
+    color:white;
+    transition: 0.1s ease;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100% !important;
+    background-color: #262626;
+    margin: 0 !important;
+
+}
+
+.download--button {
+    display: none;
+}
+
+@media screen and (min-width: 1400px) {
+    #tabs--navbar {
+        width: calc(100% - 12rem);
+        margin: 2rem 6rem
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #tabs--navbar {
+        display: none;
+    }
+
+    .hero--logo {
+        padding-bottom: 1.5rem;
+        display: inline;
+    }
+
+    .hero--content {
+        padding-top: 7rem
+    }
+
+    .hero--content a {
+        text-decoration: none;
+    }
+
+    .hero--main {
+        font-size: 40px;
+    }
+
+    .hero--button {
+        display: none;
+    }
+
+    .download--button {
+        display: block;
+        padding: 20px 80px;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+        background-color: #F52828;
+        color: white;
+        font-size: 1rem;
+        border-radius: 5px;
+        border: none;
+        font-weight: bold;
+    }
+}
+
+
+
+

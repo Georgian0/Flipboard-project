@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+}
+
+
+.publisher--page {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #141414;
+    height: max-content;
+    color: white;
+    padding: 1.5rem 1.5rem 0.75rem 1.5rem;
+    margin: 0rem 3rem;
+}
+
+.publisher--page h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.publisher--page p {
+    color: #bcbcbc;
+    margin-bottom: 20px;
+}
+
+.publisher--page a {
+    text-decoration: none;
+    color:#bcbcbc;
+}
+
+.publisher--bg {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/space_travel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .publisher--bg {
+        background-image: none;
+    }
+
+}
+

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+}
+
+.login--bg {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../assets/space_travel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .login--bg {
+        background-image: none;
+    }
+}

@@ -1,0 +1,262 @@
+.container {
+    display: grid;
+    grid-template-columns: 0.8fr 0.8fr 0.8fr;
+    padding: 10px 2rem;
+    width:fit-content;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.read--button {
+    padding: 9px 15px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F52828;
+    color: white;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.read--button:hover {
+    cursor: pointer;
+}
+
+.read--div {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    .main--img {
+        height: 20rem !important;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {  
+        display: none;
+    }
+
+    .read--button {
+        display: none;;
+    }
+} 
+
+@media (max-width: 992px) {
+    .container {  grid-template-columns: auto;
+    gap: 2rem;}
+}   
+
+@media (max-width: 1200px) {
+    .container {  
+        grid-template-columns: repeat(2, calc(50% - 0px));
+    }
+
+
+
+} 
+
+@media screen and (min-width: 1400px) {
+    .container {
+        margin: auto
+    }
+
+}
+
+.card--top {
+    display: flex;
+    align-items: center;
+    color: #969696;
+    padding: 1.10rem 1.10rem;
+}
+
+.card--top h4 {
+    margin-left: 0.75rem;
+    font-size: 1rem;
+}
+
+.card--top h4:hover {
+    color: white;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.card--body {
+    border: 2px #262626 solid;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    justify-content: space-between;
+}
+
+.card--body h5 {
+    padding: 0.75rem;
+    color: #969696;
+    font-size: 15px;
+}
+
+.card--body h2 {
+    padding: 0.30rem 0.75rem;
+    max-width: 25rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    text-align: start;
+}
+
+.card--body h2:hover {
+    cursor: pointer;
+}
+
+.card--body p {
+    padding: 0.30rem 0.75rem;
+    color:#969696;
+}
+
+.card--body p:hover {
+    cursor: pointer;
+    color: white;
+}
+
+ .main--img {
+   padding: 0.30rem 0.75rem;
+   border-radius: 1.2rem;
+   height: 25rem;
+   width: auto;
+   object-fit:cover;
+   max-width: 500px;
+   margin: 0;
+}
+
+.main--img:hover {
+    cursor: pointer;
+}
+
+.add--button {
+    background-color: transparent;
+    border: none;
+}
+
+.like--button:hover {
+    cursor: pointer;
+}
+
+.comment--button:hover {
+    cursor: pointer;
+}
+
+.share--button:hover {
+    cursor: pointer;
+}
+
+.like--button {
+    background-color: transparent;
+    border: none;
+}
+
+.comment--button {
+    background-color: transparent;
+    border: none;
+}
+
+.share--button {
+    background-color: transparent;
+    border: none;
+}
+
+.card--actions {
+    display: flex;
+    padding: 2rem 0.75rem 1rem 0.75rem;
+    justify-content: space-between;
+    
+}
+
+.like--section {
+   display: flex;
+   align-items: center;
+
+}
+
+.like--section h4 {
+    margin-left: 0.30rem;
+    margin-bottom: 0.30rem;
+}
+
+.comment--section {
+    display: flex;
+    align-items: center;
+ 
+ }
+ 
+ .comment--section h4 {
+     margin-left: 0.30rem;
+     margin-bottom: 0.30rem;
+ }
+
+ .add--section {
+    display: flex;
+    align-items: center;
+ 
+ }
+ 
+ .add--section h4 {
+     margin-left: 0.30rem;
+     margin-bottom: 0.30rem;
+ }
+
+.read--more--bg {
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: var(--color--modal-overlay);
+  --color--modal-overlay: hsla(0,0%,40%,0.8);
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+.read--more--box {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    border-radius: 10px;
+    color: white;
+}
+
+.read--more--p {
+    font-size: 17px;
+    padding: 5px 3rem 0rem 1rem
+}
+
+.read--more--h4 {
+    font-size: 21px;
+    padding: 1rem 0rem 0rem 1rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.read--more--button {
+    margin: 6rem 15px 15px 0px;
+    align-self: end;
+    background-color: #F52828;
+    color: white;
+    border: none;
+    padding: 8px 13px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    
+}
+
+.read--more--button:hover {
+    cursor: pointer;
+}

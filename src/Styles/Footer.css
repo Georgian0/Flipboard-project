@@ -1,0 +1,31 @@
+.footer--option {
+    color: #BCBCBC; 
+    text-decoration: underline;
+    padding: 0.75rem;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.footer {
+    display: flex;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    list-style-type:  none;
+    padding: 3rem 1rem;
+    flex-wrap: wrap;
+    gap: 20px;
+    line-height: 19px;
+}
+
+.footer--option:hover {
+    color: white;
+    transition: 0.2s ease;
+}
+
+.copyright {
+    justify-content: center;
+    display: flex;
+}
