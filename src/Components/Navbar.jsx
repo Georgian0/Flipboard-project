@@ -29,9 +29,13 @@ export default function Navbar(props) {
       const [isSearched, setIsSearched] = useState(false)
 
 
+
       const handleSearch = () => {
         setIsSearched(!isSearched);
-      }
+        setTimeout(() => {
+            inputRef.current.focus();
+          }, 0); // Ensure the input is focused after rendering
+      };
 
     const [getLink, setGetLink] = useState(false);
 
@@ -90,6 +94,8 @@ export default function Navbar(props) {
         };
     }, [isSearched]);
 
+    const inputRef = useRef(null);
+
 
     const getLinkBgRef = useRef(null);
 
@@ -131,11 +137,11 @@ export default function Navbar(props) {
 
            <div className="nav--options">
                 <Link to='/news' className="no-decoration"><a href="#" className="nav--newsletter padding">Newsletters</a></Link>
-                        <div className="search--bar" onClick={handleSearch}>
+                        <div className="search--bar" onClick={handleSearch} style={{ display: isSearched ? 'none' : 'flex' }}>
                         <svg role="img" aria-labelledby="search-icon-title" className="search--icon" width="18" height="18" viewBox="0 0 22 22"><title id="search-icon-title">Search</title><g transform="translate(2.000000, 2.000000)" stroke="#999" stroke-width="1.5" fill="none"><circle cx="7" cy="7" r="7"></circle><path d="M12,13 L17,18" stroke-linecap="square"></path></g></svg>
                             
                             <input type="text" placeholder="Search Flipboard" className="search padding" name="search"/>
-                        </div>
+                        </div> 
                 
                 <button className="padding open--in--app">Open in app</button>
                 <button className="padding sign--up"  onClick={handleClick} >Sign up</button>
@@ -339,7 +345,7 @@ export default function Navbar(props) {
                             <div className="search--box" ref={isSearchedBgRef}>
                                 <div className="search--bar">
                                     <svg role="img" aria-labelledby="search-icon-title" className="search--icon" width="18" height="18" viewBox="0 0 22 22"><title id="search-icon-title">Search</title><g transform="translate(2.000000, 2.000000)" stroke="#999" stroke-width="1.5" fill="none"><circle cx="7" cy="7" r="7"></circle><path d="M12,13 L17,18" stroke-linecap="square"></path></g></svg>
-                                    <input type="text" placeholder="Search Flipboard" className="search--2 padding--2" name="search"/>
+                                    <input type="text" placeholder="Search Flipboard" className="search--2 padding--2" name="search" ref={inputRef}/>
                                     <button onClick={handleSearch}>Cancel</button>
             
                                 </div>
