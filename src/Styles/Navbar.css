@@ -820,6 +820,11 @@ input.search--2 {
         padding: 15px 0rem 15px 45px;
     background: #262626;
     width: 100%;
+    color: #bcbcbc;
+}
+
+.displayNone {
+    display: none;
 }
 
 input.search--2::placeholder {
